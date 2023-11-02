@@ -5,6 +5,8 @@ gsap.registerPlugin(ScrollTrigger);
 
 const circle = document.querySelector('.js-circle');
 const flag = document.querySelector('.js-flag');
+const image1 = document.querySelector('.js-image-1')
+const image2 = document.querySelector('.js-image-2')
 
 gsap.to(circle, {
     yPercent: 100,
@@ -20,4 +22,20 @@ gsap.to(flag, {
     scrollTrigger: {
         scrub: true
     },
+});
+
+gsap.fromTo(image1, {
+    yPercent: 100
+}, {
+    yPercent: 0,
+    duration: 1,
+    ease: "power2.out"
+});
+
+gsap.fromTo(image2, {
+    xPercent: 100
+}, {
+    xPercent: 0,
+    duration: 1,
+    ease: "power2.out"
 });
