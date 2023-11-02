@@ -1,0 +1,33 @@
+$red: #B71A1A;
+$title-font: 'Lato', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import "header.scss";
+@import "images.scss";
+@import "text.scss";
+@import "footer.scss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.page-container {
+  width: 100%;
+}
+
+.top-bar {
+  height: 12px;
+  width: 100%;
+  background-color: $red;
+}
+
+.content-container {
+  margin: 0 3rem 3rem 3rem;
+
+  @media (max-width: 767px) {
+    margin: 0 1rem 1rem 1rem;
+  }
+}
